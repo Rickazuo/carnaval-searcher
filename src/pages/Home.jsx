@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 import feathers from "../assets/feathers.svg";
 import dancer from "../assets/dancer.svg";
-import location from "../assets/search.svg";
+import location from "../assets/location.svg";
 
 import React from "react";
 
@@ -36,11 +36,14 @@ function Home() {
 
         <div className={styles.bannerButton}>
           <div className={styles.buttons}>
-            <input placeholder="Pesquise por nome" />
+            <input
+              className={styles.inputName}
+              placeholder="Pesquise por nome"
+            />
             <select name="city drop down" id="">
               <option
                 className={styles.placeholderOption}
-                id="treze"
+                id=""
                 value=""
                 disabled
                 selected
