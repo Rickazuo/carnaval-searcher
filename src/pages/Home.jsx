@@ -1,9 +1,21 @@
 import styles from "./styles.module.css";
 
+import { useEffect, useState } from "react";
+
 import feathers from "../assets/feathers.svg";
 import dancer from "../assets/dancer.svg";
+import location from "../assets/search.svg";
 
-function App() {
+import React from "react";
+
+function Home() {
+  const [imageSrc, setImageSrc] = useState("");
+
+  useEffect(() => {
+    const randomImageNumber = Math.floor(Math.random() * 1000) + 1;
+    setImageSrc(`https://picsum.photos/400/300?image=${randomImageNumber}`);
+  }, []);
+
   return (
     <body>
       <div className={styles.headerContainer}>
@@ -48,15 +60,132 @@ function App() {
         </div>
         <div className={styles.resultsBlocks}>
           <div className={styles.gridResults}>
-            <div className={styles.elementGrid}>1</div>
-            <div className={styles.elementGrid}>2</div>
-            <div className={styles.elementGrid}>3</div>
-            <div className={styles.elementGrid}>4</div>
-            <div className={styles.elementGrid}>5</div>
-            <div className={styles.elementGrid}>6</div>
-            <div className={styles.elementGrid}>7</div>
-            <div className={styles.elementGrid}>8</div>
-            <div className={styles.elementGrid}>9</div>
+            <div className={styles.elementGrid}>
+              <img width="100%" src={imageSrc} alt="random image" />
+              <div className={styles.titleResults}>Titulo</div>
+              <div className={styles.bodyResults}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti ipsum repudiandae beatae, qui officia consectetur esse!
+                Aperiam adipisci vero, officiis id laborum quam repudiandae
+                doloribus eos vel, tempora impedit quibusdam.
+              </div>
+              <div className={styles.localizationResults}>
+                <img src={location} alt="" />
+                Localização
+              </div>
+            </div>
+            <div className={styles.elementGrid}>
+              <img width="100%" src={imageSrc} alt="random image" />
+              <div className={styles.titleResults}>Titulo</div>
+              <div className={styles.bodyResults}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti ipsum repudiandae beatae, qui officia consectetur esse!
+                Aperiam adipisci vero, officiis id laborum quam repudiandae
+                doloribus eos vel, tempora impedit quibusdam.
+              </div>
+              <div className={styles.localizationResults}>
+                <img src={location} alt="" />
+                Localização
+              </div>
+            </div>
+            <div className={styles.elementGrid}>
+              <img width="100%" src={imageSrc} alt="random image" />
+              <div className={styles.titleResults}>Titulo</div>
+              <div className={styles.bodyResults}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti ipsum repudiandae beatae, qui officia consectetur esse!
+                Aperiam adipisci vero, officiis id laborum quam repudiandae
+                doloribus eos vel, tempora impedit quibusdam.
+              </div>
+              <div className={styles.localizationResults}>
+                <img src={location} alt="" />
+                Localização
+              </div>
+            </div>
+            <div className={styles.elementGrid}>
+              <img width="100%" src={imageSrc} alt="random image" />
+              <div className={styles.titleResults}>Titulo</div>
+              <div className={styles.bodyResults}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti ipsum repudiandae beatae, qui officia consectetur esse!
+                Aperiam adipisci vero, officiis id laborum quam repudiandae
+                doloribus eos vel, tempora impedit quibusdam.
+              </div>
+              <div className={styles.localizationResults}>
+                <img src={location} alt="" />
+                Localização
+              </div>
+            </div>
+            <div className={styles.elementGrid}>
+              <img width="100%" src={imageSrc} alt="random image" />
+              <div className={styles.titleResults}>Titulo</div>
+              <div className={styles.bodyResults}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti ipsum repudiandae beatae, qui officia consectetur esse!
+                Aperiam adipisci vero, officiis id laborum quam repudiandae
+                doloribus eos vel, tempora impedit quibusdam.
+              </div>
+              <div className={styles.localizationResults}>
+                <img src={location} alt="" />
+                Localização
+              </div>
+            </div>
+            <div className={styles.elementGrid}>
+              <img width="100%" src={imageSrc} alt="random image" />
+              <div className={styles.titleResults}>Titulo</div>
+              <div className={styles.bodyResults}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti ipsum repudiandae beatae, qui officia consectetur esse!
+                Aperiam adipisci vero, officiis id laborum quam repudiandae
+                doloribus eos vel, tempora impedit quibusdam.
+              </div>
+              <div className={styles.localizationResults}>
+                <img src={location} alt="" />
+                Localização
+              </div>
+            </div>
+            <div className={styles.elementGrid}>
+              <img width="100%" src={imageSrc} alt="random image" />
+              <div className={styles.titleResults}>Titulo</div>
+              <div className={styles.bodyResults}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti ipsum repudiandae beatae, qui officia consectetur esse!
+                Aperiam adipisci vero, officiis id laborum quam repudiandae
+                doloribus eos vel, tempora impedit quibusdam.
+              </div>
+              <div className={styles.localizationResults}>
+                <img src={location} alt="" />
+                Localização
+              </div>
+            </div>
+            <div className={styles.elementGrid}>
+              <img width="100%" src={imageSrc} alt="random image" />
+              <div className={styles.titleResults}>Titulo</div>
+              <div className={styles.bodyResults}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti ipsum repudiandae beatae, qui officia consectetur esse!
+                Aperiam adipisci vero, officiis id laborum quam repudiandae
+                doloribus eos vel, tempora impedit quibusdam.
+              </div>
+              <div className={styles.localizationResults}>
+                <img src={location} alt="" />
+                Localização
+              </div>
+            </div>
+            <div className={styles.elementGrid}>
+              <img width="100%" src={imageSrc} alt="random image" />
+              <div className={styles.titleResults}>Titulo</div>
+              <div className={styles.bodyResults}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti ipsum repudiandae beatae, qui officia consectetur esse!
+                Aperiam adipisci vero, officiis id laborum quam repudiandae
+                doloribus eos vel, tempora impedit quibusdam.
+              </div>
+              <div className={styles.localizationResults}>
+                <img src={location} alt="" />
+                Localização
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -64,4 +193,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
