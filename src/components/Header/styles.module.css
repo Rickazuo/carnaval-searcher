@@ -1,0 +1,57 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 40px;
+    margin-top: 150px;
+}
+
+.feathers {
+    position: absolute;
+    width: 600px;
+    top: 0;
+    left: 0;
+
+    z-index: -3;
+}
+
+.dancer {
+    position: absolute;
+    width: 600px;
+    bottom: 100;
+    right: 0;
+
+    z-index: -3;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex-basis: 0px 647px;
+    width: 647px;
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1510px) {
+    .dancer {
+        right: 0;
+        top: 0;
+        width: 45vw;
+    }
+
+    .feathers {
+        width: 45vw;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 647px) {
+    .title {
+        width: auto;
+    }
+}
