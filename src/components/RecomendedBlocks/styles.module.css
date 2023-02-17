@@ -20,6 +20,16 @@
     flex-wrap: wrap;
 }
 
+.resultsObservation{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+
+color: #7C7C8A;
+}
+
 .gridResults {
     position: relative;
     display: grid;

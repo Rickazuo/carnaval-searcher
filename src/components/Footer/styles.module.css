@@ -1,0 +1,21 @@
+.Footer{
+    padding: 24px;
+    background: linear-gradient(135deg, #a08cff, #ffd94b, #e45858, #ff7ad7, #496afe);
+  background-size: 100% 150px;
+  background-repeat: repeat-x;
+    /* background: #a08cff, #ffd94b, #e45858 , #ff7ad7 , #496afe , ; */
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+
+    gap: 10px;
+}
