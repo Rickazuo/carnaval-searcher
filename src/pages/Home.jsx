@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Header from "../components/Header/Header";
 import RecomendedBlocks from "../components/RecomendedBlocks/RecomendedBlocks";
 import Footer from "../components/Footer/Footer";
@@ -74,10 +76,11 @@ const cards = [
 
 function Home() {
   const { width, height } = useWindowSize();
+  const [searchedCards, setSearchedCards] = useState([...cards])
 
   return (
     <div className={styles.carnavalContainer}>
-      <Header cards={cards} />
+      <Header cards={cards} setSearchedCards={setSearchedCards}/>
       <Confetti
         tweenDuration={1000}
         numberOfPieces={400}
@@ -85,7 +88,7 @@ function Home() {
         height={height}
         recycle={false}
       />
-      <RecomendedBlocks cards={cards} />
+      <RecomendedBlocks cards={searchedCards}/>
       <Footer />
     </div>
   );
