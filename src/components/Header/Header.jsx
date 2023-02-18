@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 
 import Search from "../Search/Search";
 
-export default function Header({ cards }) {
+export default function Header({ cards, setSearchedCards }) {
   const locations = cards
     .map((location) => location.localization)
     .filter((value, index, self) => {
@@ -27,7 +27,7 @@ export default function Header({ cards }) {
         src={dancer}
         alt="background dancer image"
       />
-      <Search locations={locations} />
+      <Search locations={locations} cards={cards} setSearchedCards={setSearchedCards} />
     </div>
   );
 }
