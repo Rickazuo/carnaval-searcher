@@ -1,16 +1,9 @@
-import { useState, useEffect } from "react";
-
 import styles from "./styles.module.css";
 import Card from "../Card/Card";
-import Toggle from "../Toggle/Toggle";
 
 export default function RecomendedBlocks({ cards }) {
   return (
-    <div className={styles.results}>
-      <div className={styles.headerResults}>
-        <h2>Blocos recomendados</h2>
-        <Toggle />
-      </div>
+    <>
       <div>
         <h4 className={styles.resultsObservation}>*Blocos ilustrativos</h4>
       </div>
@@ -27,6 +20,6 @@ export default function RecomendedBlocks({ cards }) {
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 }

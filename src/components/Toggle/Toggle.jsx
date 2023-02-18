@@ -1,13 +1,7 @@
 import { useState } from "react";
 import styles from "./styles.module.css";
 
-export default function Toggle() {
-    const [toggle, setToggle] = useState(true);
-
-    const onClick = () => {
-        setToggle((prev) => !toggle);
-    };
-
+export default function Toggle({toggle, onClick}) {
     return (
         <div onClick={onClick} className={styles.containerToggle}>
             <button
