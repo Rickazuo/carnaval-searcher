@@ -1,9 +1,8 @@
 .Footer{
     padding: 24px;
     background: linear-gradient(135deg, #a08cff, #ffd94b, #e45858, #ff7ad7, #496afe);
-  background-size: 100% 150px;
-  background-repeat: repeat-x;
-    /* background: #a08cff, #ffd94b, #e45858 , #ff7ad7 , #496afe , ; */
+    background-size: 100% 150px;
+    background-repeat: repeat-x;
     margin-top: 70px;
     width: 100%;
     display: flex;
