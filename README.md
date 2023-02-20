@@ -1,4 +1,4 @@
-<h1 align="center"> #6 Boarding Pass </h1>
+<h1 align="center"> #7 Carnaval Searcher </h1>
 
 <p align="center">
 Um site para encontrar um bloco de carnaval é o #7 desafio <a href="https://boracodar.dev/">#BORACODAR</a> da RocketSeat<br/>
@@ -13,8 +13,8 @@ Um site para encontrar um bloco de carnaval é o #7 desafio <a href="https://bor
 
 <br>
 
-<p align="center">
-  <!-- <img alt="carnaval searcher project gif" src="./src/assets/" width="100%"> -->
+<p align="center" id="-layout">
+  <img alt="carnaval searcher project gif" src="./src/assets/gif-carnaval-web.gif" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -43,11 +43,19 @@ O desafio inicial foi a criação de um site para buscar blocos de carnaval como
   Página Inicial
 </h2>
 
-<p>A Página Inicial, há a opção de pesquisar por nome do bloco ou região.</p>
+<p>Na Página Inicial, há a opção de pesquisar por nome do bloco ou região em que ele se encontra.</p>
 
-<p>Na caixa onde são mostrado os resultados da pesquisa, é possível ver um botão indicando a visualização por lista ou por mapa, caso selecionado mapa irá mostrar um pin com a localização que pode ser expandido em um popup com mais informações.</p>
+<p align="center">
+  <img alt="carnaval searcher first page project gif" src="./src/assets/first-page-carnaval.png" width="100%">
+</p>
 
-_<h2 align="center" ><a href="https://boarding-pass-rocketseat.vercel.app/" target="_blank">Visite o projeto online</a></h2>_
+<p>Na caixa onde são mostrado os resultados da pesquisa, há um botão indicando a visualização por lista ou por mapa, caso selecionado mapa, será mostrado pins com a localização de cada bloco. Ao ser clicado, abre um popup com mais informações.</p>
+
+<p align="center">
+  <img alt="carnaval searcher map project gif" src="./src/assets/carnaval-map.png" width="100%">
+</p>
+
+_<h2 align="center" ><a href="https://carnaval-searcher.vercel.app/" target="_blank">Visite o projeto online</a></h2>_
 
 ## 🔖 Layout
 
